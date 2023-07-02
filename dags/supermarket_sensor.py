@@ -1,8 +1,8 @@
 import datetime as dt
 from pathlib import Path
+from airflow import DAG
 from airflow.sensors.filesystem import FileSensor
 from airflow.operators.bash import BashOperator
-from airflow import DAG
 
 
 def _wait_for_supermarket(supermarket_id):
