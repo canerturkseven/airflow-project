@@ -43,8 +43,6 @@ cleanse_supermarket_3 = BashOperator(
     task_id="cleanse_supermarket_3", bash_command="echo Cleanse supermarket3", dag=dag
 )
 
-
-
 wait_for_supermarket_1 >> cleanse_supermarket_1
 wait_for_supermarket_2 >> cleanse_supermarket_2
 wait_for_supermarket_3 >> cleanse_supermarket_3
