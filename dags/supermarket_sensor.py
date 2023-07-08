@@ -28,6 +28,11 @@ wait_for_supermarket_2 = FileSensor(
     filepath="/data/supermarket2/data.csv",
     dag=dag,
 )
+wait_for_supermarket_2 = FileSensor(
+    task_id="wait_for_supermarket_2",
+    filepath="/data/supermarket2/data.csv",
+    dag=dag,
+)
 cleanse_supermarket_1 = BashOperator(
     task_id="cleanse_supermarket_1", bash_command="echo Cleanse supermarket1", dag=dag
 )
