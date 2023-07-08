@@ -45,3 +45,5 @@ cleanse_supermarket_3 = BashOperator(
 
 wait_for_supermarket_2 >> cleanse_supermarket_2
 wait_for_supermarket_1 >> cleanse_supermarket_1
+wait_for_supermarket_3 >> cleanse_supermarket_3
+
