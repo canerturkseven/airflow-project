@@ -13,7 +13,7 @@ def _wait_for_supermarket(supermarket_id):
 
 dag = DAG(
     dag_id="supermarket_data_cleanse",
-    start_date=dt.datetime(year=2022, month=1, day=1),
+    start_date=dt.datetime(year=2020, month=1, day=1),
     end_date=dt.datetime(year=2023, month=1, day=15),
     schedule_interval=dt.timedelta(minutes=10),
     catchup=True,
